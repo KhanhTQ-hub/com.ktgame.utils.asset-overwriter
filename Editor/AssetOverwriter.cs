@@ -32,10 +32,10 @@ namespace com.ktgame.utils.asset_overwriter.editor
             }
         }
 
-        private const string SourceExistFormat =
-            "The contents of the file {0} and '{1}' are exactly the same, so the replacement tool will stop working.\\nDo you really want to import?";
+        private const string SourceExistFormat = "The contents of the file {0} and '{1}' are exactly the same, so the replacement tool will stop working.\\nDo you really want to import?";
 
-        private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
+        private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
+            string[] movedAssets, string[] movedFromAssetPaths)
         {
             var count = importedAssets.Length;
             if (count == 0 || Event.current == null || Event.current.type != EventType.DragPerform)
@@ -117,7 +117,8 @@ namespace com.ktgame.utils.asset_overwriter.editor
                     if (FileCompare(path1.Path, path2.Path))
                     {
                         var message = string.Format(SourceExistFormat, path1.FileName, path2.FileName);
-                        isDeleteImportedAssets = !EditorUtility.DisplayDialog("Confirmation", message, "Import", "Cancel");
+                        isDeleteImportedAssets =
+                            !EditorUtility.DisplayDialog("Confirmation", message, "Import", "Cancel");
                         isExecutable = false;
                         break;
                     }
