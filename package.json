@@ -1,0 +1,11 @@
+{
+  "name": "com.ktgame.utils.asset-overwriter",
+  "version": "1.0.0",
+  "displayName": "com.ktgame.utils.asset-overwriter",
+  "description": "Asset overwriter",
+  "author": {
+    "name": "ktgame",
+    "email": "khanhquang0912qh@gmail.com",
+    "url": "https://github.com/KhanhTQ-hub/com.ktgame"
+  }
+}
