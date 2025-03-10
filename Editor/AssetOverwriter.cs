@@ -32,7 +32,8 @@ namespace com.ktgame.utils.asset_overwriter.editor
             }
         }
 
-        private const string SourceExistFormat = "The contents of the file {0} and '{1}' are exactly the same, so the replacement tool will stop working.\\nDo you really want to import?";
+        private const string SourceExistFormat =
+            "The contents of the file {0} and '{1}' are exactly the same, so the replacement tool will stop working.\\nDo you really want to import?";
 
         private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
             string[] movedAssets, string[] movedFromAssetPaths)
@@ -266,14 +267,14 @@ namespace com.ktgame.utils.asset_overwriter.editor
 
             var fs1 = new FileStream(file1, FileMode.Open);
             var fs2 = new FileStream(file2, FileMode.Open);
-            int byte1;
-            int byte2;
             var ret = false;
 
             try
             {
                 if (fs1.Length == fs2.Length)
                 {
+                    int byte1;
+                    int byte2;
                     do
                     {
                         byte1 = fs1.ReadByte();
