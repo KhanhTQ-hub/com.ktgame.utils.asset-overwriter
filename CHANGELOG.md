@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/KhanhTQ-Organization/com.ktgame.utils.asset-overwriter/compare/v1.0.1...v1.0.2) (2025-07-04)
+
+
+### Bug Fixes
+
+* scope ([1255638](https://github.com/KhanhTQ-Organization/com.ktgame.utils.asset-overwriter/commit/12556380c3939e2cdee118cfca136b5a69ded49e))
+
 ## [1.0.1](https://github.com/KhanhTQ-hub/com.ktgame.utils.asset-overwriter/compare/v1.0.0...v1.0.1) (2025-03-10)
 
 
